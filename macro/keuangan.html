@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Management</title>
+    <link rel="stylesheet" href="css/keuangan.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Tabungin</div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tabungan</a></li>
+                <li><a href="#">Anggaran</a></li>
+                <li><a href="#">Artikel</a></li>
+            </ul>
+            <div class="actions">
+                <i class="fas fa-bell"></i>
+                <button class="sign-up" aria-label="Profile">Profile</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Kelola Keuangan Kamu Sekarang!</h1>
+            <p>Di sini, kamu bisa mengalokasikan dana sesuai kebutuhan, mencatat setiap pemasukan dan pengeluaran, serta
+                membuat grafik perkembangan keuanganmu.</p>
+            <button class="expand-btn">▼</button>
+        </div>
+        <img src="img/keuangan.jpeg" alt="Finance Management Image" class="banner-img">
+    </section>
+
+    <section class="manage-finance">
+        <h2>Ayo kelola keuanganmu!</h2>
+        <div class="finance-overview">
+            <div class="income">
+                <label>Penghasilan</label>
+                <input type="text" value="Rp 5.250.000" readonly>
+            </div>
+            <div class="actions">
+                <button class="edit-btn">Edit</button>
+                <button class="save-btn">Simpan</button>
+            </div>
+        </div>
+        <form class="finance-form">
+            <label>Tanggal</label>
+            <input type="date" value="2024-09-01">
+            <label>Belanja Bulanan</label>
+            <input type="text" placeholder="Rp 2.000.000">
+            <label>Transportasi</label>
+            <input type="text" placeholder="Rp 500.000">
+            <label>Kebutuhan Pribadi</label>
+            <input type="text" placeholder="Rp masukkan nominal">
+            <button type="submit" class="submit-btn">Simpan</button>
+        </form>
+    </section>
+
+    <section class="summary">
+        <h3>Pengeluaran dan Penghasilan</h3>
+        <div class="summary-cards">
+            <div class="card">
+                <p>Total Penghasilan</p>
+                <p>Rp 5.000.000</p>
+            </div>
+            <div class="card">
+                <p>Total Pengeluaran</p>
+                <p>Rp 3.500.000</p>
+            </div>
+            <div class="card">
+                <p>Sisa Dana</p>
+                <p>Rp 1.750.000</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="transactions">
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Tanggal</th>
+                    <th>Kategori</th>
+                    <th>Jumlah</th>
+                    <th>Catatan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>01-09-2024</td>
+                    <td>Belanja Bulanan</td>
+                    <td>-Rp 2.000.000</td>
+                    <td>makanan dan minuman</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>01-09-2024</td>
+                    <td>Transportasi</td>
+                    <td>-Rp 500.000</td>
+                    <td>busway dan gojek</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="title">Grafik Pemasukkan dan Pengeluaran</div>
+            <div class="chart">
+                <!-- Each bar represents a month -->
+                <div class="bar">
+                    <div class="income">Pemasukkan</div>
+                    <div class="expense">Pengeluaran</div>
+                    <p>April</p>
+                </div>
+                <div class="bar">
+                    <div class="income" style="height: 40%;">Pemasukkan</div>
+                    <div class="expense" style="height: 60%;">Pengeluaran</div>
+                    <p>Mei</p>
+                </div>
+                <div class="bar">
+                    <div class="income" style="height: 25%;">Pemasukkan</div>
+                    <div class="expense" style="height: 75%;">Pengeluaran</div>
+                    <p>Juni</p>
+                </div>
+                <div class="bar">
+                    <div class="income" style="height: 50%;">Pemasukkan</div>
+                    <div class="expense" style="height: 50%;">Pengeluaran</div>
+                    <p>Juli</p>
+                </div>
+                <div class="bar">
+                    <div class="income" style="height: 20%;">Pemasukkan</div>
+                    <div class="expense" style="height: 80%;">Pengeluaran</div>
+                    <p>Agustus</p>
+                </div>
+                <div class="bar">
+                    <div class="income" style="height: 45%;">Pemasukkan</div>
+                    <div class="expense" style="height: 55%;">Pengeluaran</div>
+                    <p>September</p>
+                </div>
+            </div>
+            <div class="legend">
+                <div class="income-legend"><span></span>: Pemasukkan</div>
+                <div class="expense-legend"><span></span>: Pengeluaran</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>© 2024 Tabungin Inc.</p>
+                    <a href="#">Terms & conditions</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Contact us</a>
+                </div>
+                <div class="footer-right">
+                    <a href="#"><img src="img/f1.jpg" alt="Instagram"></a>
+                    <a href="#"><img src="img/f2.jpg" alt="Facebook"></a>
+                    <a href="#"><img src="img/f3.jpg" alt="YouTube"></a>
+                    <a href="#"><img src="img/f4.jpg" alt="LinkedIn"></a>
+                    <a href="#"><img src="img/f5.jfif" alt="Twitter"></a>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>
